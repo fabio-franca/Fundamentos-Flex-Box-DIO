@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Items</title>
+    <style>
+        .container {
+            max-width: 350px;
+            border: 1px solid;
+            display: flex;
+        }
+        .item {
+            background-color: bisque;
+            margin: 5px;
+            color: blueviolet;
+            text-align: center;
+            flex: 1;
+        }
+        .center {
+            align-items: center;
+        }
+        .stretch {
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h3>Center</h3>
+    <section class="container center flex">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit amet. Asperiores, impedit.</div>
+        <div class="item">Lorem ipsum dolor sit amet.dadadasdasdasda adadasdasdas adasdasdsa  adasdsadas adsadada adaqeqeq zzczczczczc q, qeqweq</div>
+    </section>
+    <h3>Strecth</h3>
+    <section class="container center stretch">  <!--Faz com que os outros itens do container cresçam de acordo com o maior item-->
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit amet. Asperiores, impedit.</div>
+        <div class="item">Lorem ipsum dolor sit amet.dadadasdasdasda adadasdasdas adaqeqeq zzczczczczc q, qeqweq</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGN-SELF</title>
+    <style>
+        .flex-container {
+            display: flex;
+            max-width: 350px;
+            border: 2px dashed #cecece;
+            margin-bottom: 10px;
+        }
+        .item {
+          background-color: deeppink; 
+          color: white;
+          font-size: 24px;
+          text-align: center;
+          margin: 5px;
+        }
+        .center {
+            align-self: center;
+        }
+        .start {
+            align-self: flex-start;
+        }
+        .end {
+            align-self: flex-end;
+        }
+        .baseline {
+            align-self: baseline;
+        }
+        .strecth {
+            align-self: stretch;
+        }
+        .auto {
+            align-self: auto;  /* Padrão */
+        }
+    </style>
+</head>
+<body>
+    <h3>AUTO</h3>
+    <section class="flex-container">
+        <div class="item auto">AA</div>
+        <div class="item auto">BBB</div>
+        <div class="item auto">C</div>
+        <div class="item auto">DDDD</div>
+    </section>
+    <h3>ALIGN-SELF: MIX</h3>
+    <section class="flex-container">
+        <div class="item end">AA</div>
+        <div class="item center">Lorem ipsum dolor sit amet. Bla bla bla</div>
+        <div class="item start">C</div>
+        <div class="item strecth">DDDD</div>
+    </section>
+</body>
+</html>
